@@ -59,17 +59,45 @@ $db = [
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <title>FAQ Google</title>
+   <link rel="stylesheet" href="css/style.css">
  </head>
  <body>
-   <?php foreach ($db as $key => $faq) {?>
-     <!-- // var_dump($faq);
-     // echo $key. "<br>" -->
-     <h2><?php echo $faq['question'];?> </h2> <p><?php echo $faq['answer'];?></p>
-     <!-- //MODO "2"
-     // foreach ($faq as $question => $answer) {
-     //   echo $question . "<br>" . $answer;
-     // } -->
-   <?php }  ?>
+   <header>
+     <div class="header-nav">
+       <div class="header-nav-sup">
+         <h3><img src="img/googlelogos.png" alt=""> Privacy e Termini</h3>
+       </div>
+       <div class="header-nav-inf">
+         <ul class="list_menu">
+           <li><a href="#">Introduzione</a></li>
+           <li><a href="#">Norme sulla privacy</a></li>
+           <li><a href="#">Termini di servizio</a></li>
+           <li><a href="#">Tecnologie</a></li>
+           <li><a href="#">Domande Frequenti</a></li>
+           <li><a href="#">Account Google</a></li>
+       </div>
+     </div>
+   </header>
+   <main>
+     <div class="container">
+       <?php foreach ($db as $key => $faq) {?>
+         <!-- // var_dump($faq);
+         // echo $key. "<br>" -->
+         <h2><?php echo $faq['question'];?> </h2> <p><?php echo $faq['answer'];?></p>
+         <!-- //MODO "2"
+         // foreach ($faq as $question => $answer) {
+         //   echo $question . "<br>" . $answer;
+         // } -->
+       <?php }  ?>
+
+     </div>
+
+   </main>
+   <footer>
+
+   </footer>
+
  </body>
  </html>
